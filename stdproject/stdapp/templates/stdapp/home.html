@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+</head>
+<body>
+    <h2>Student List</h2>
+    <ul>
+        {% for s in students %}
+            <li>{{ s }} - <a href="{% url 'res' s %}">View Result</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
