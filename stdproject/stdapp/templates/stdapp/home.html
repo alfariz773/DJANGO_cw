@@ -5,10 +5,12 @@
 </head>
 <body>
     <h2>Student List</h2>
-    <ul>
-        {% for s in students %}
-            <li>{{ s }} - <a href="{% url 'res' s %}">View Result</a></li>
-        {% endfor %}
+<ul>
+  {% for s in students %}
+    <li><a href="{% url 'res' s %}">{{ s }}</a></li>
+  {% endfor %}
+</ul>
+
     </ul>
 </body>
 </html>
